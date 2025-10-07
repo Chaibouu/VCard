@@ -3,32 +3,32 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "HOST=0.0.0.0 PORT=2221 nuxt",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "engines": {
     "node": "22.x"
   },
-  "engineStrict": true,
   "dependencies": {
-    "@caohenghu/vue-colorpicker": "^1.2.4",
-    "@nuxtjs/pwa": "^3.3.5",
-    "core-js": "^3.22.7",
+    "@nuxtjs/tailwindcss": "^6.8.4",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/nuxt": "^10.5.0",
     "cropperjs": "^1.5.11",
     "file-saver": "^2.0.5",
     "id3-parser": "^2.0.0",
     "jszip": "^3.10.1",
-    "nuxt": "^2.15.8",
-    "vue-clickaway2": "^2.3.2",
-    "vuedraggable": "^2.24.3"
+    "nuxt": "^3.8.4",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.8",
+    "vue-draggable-plus": "^0.3.5",
+    "vue3-colorpicker": "^1.0.0"
   },
   "devDependencies": {
-    "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "@nuxtjs/tailwindcss": "^5.0.4",
-    "raw-loader": "^4.0.2",
-    "sass": "^1.52.1",
-    "sass-loader": "^10.2.1"
+    "@nuxt/devtools": "latest",
+    "@types/node": "^20.10.0",
+    "sass": "^1.69.5"
   }
 }

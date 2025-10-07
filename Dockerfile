@@ -1,10 +1,10 @@
-FROM node:16.17.0-alpine AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm i
+RUN npm ci --only=production
 COPY . .
 RUN npm run generate
 
 FROM nginx:alpine
-COPY --from=build /app/public /usr/share/nginx/html
+COPY --from=build /app/.output/public /usr/share/nginx/html
 EXPOSE 80

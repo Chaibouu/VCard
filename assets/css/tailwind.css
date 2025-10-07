@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for EnBizCard */
+.logo {
+  display: inline-block;
+}
+
+/* Transitions */
+.drop-enter-active,
+.drop-leave-active {
+  transition: all 0.3s ease;
+}
+
+.drop-enter-from,
+.drop-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* List transitions */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.3s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* Ghost class for drag and drop */
+.ghost {
+  opacity: 0.5;
+  background: #c8ebfb;
+}
+
+/* Slide transition */
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+/* Toggle switch styles */
+.toggle-switch {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
