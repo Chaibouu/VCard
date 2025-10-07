@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "engineStrict": true,
   "dependencies": {
